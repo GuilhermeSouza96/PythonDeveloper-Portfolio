@@ -20,7 +20,7 @@ I'm currently expanding my skill set with **Django**, **Django REST Framework**,
 Here are some of the key projects you'll find in this repository:
 
 ### 🔁 Task Automations
-- 📋 **[`Stack Files`](./Stack%20Files/)**: Is a tool that merges .csv, .txt, and .xlsx files into one. You choose the encoding and separator. No installation needed
+- 📋 **[`Stack Files`](./Stack_Files/)**: Is a tool that merges .csv, .txt, and .xlsx files into one. You choose the encoding and separator. No installation needed
 
 ### 🌐 Web Applications (In Progress)
 
