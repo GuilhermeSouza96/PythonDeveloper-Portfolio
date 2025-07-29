@@ -12,17 +12,7 @@ Here are some of the key projects you'll find in this repository:
 
 ### 🌐 Web Applications (In Progress)
 
-
 ---
-
-## 📚 Technologies
-
-- **Languages:** Python, SQL, HTML/CSS
-- **Frameworks & Libraries:** Django, Flask, Django REST Framework, Pandas, NumPy, Matplotlib, OpenPyXL, Requests
-- **Tools:** Git, GitHub, VS Code, Excel, Power BI
-
----
-
 ## 📫 Let's Connect
 
 Feel free to connect or reach out!
