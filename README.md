@@ -11,6 +11,7 @@ Here are some of the key projects you'll find in this repository:
 - **Aging Calculation Tool**: Reduced a 4-day manual process to just 10 minutes using Python. This tool calculates the aging of financial entries based on a user-provided date, automating a critical part of the reporting workflow.
 
 ### 🌐 Web Applications (In Progress)
+- 🧾 **[`Study`](./Study/)**: Some interesting subjects studied
 
 ---
 ## 📫 Let's Connect
