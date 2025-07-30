@@ -1,4 +1,4 @@
-### 📚 Study Progress — Python Developer
+# 📚 Study Progress — Python Developer
 This section contains study notes, exercises, and small projects developed during my learning journey with Python.
 
 ---
