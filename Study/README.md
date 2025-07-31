@@ -10,6 +10,7 @@ This section contains study notes, exercises, and small projects developed durin
 - Error handling: try/except, custom exceptions
 - Object-Oriented Programming: classes, inheritance, encapsulation
 - Virtual environments and package management with venv and pip
+- Building APIs with **FastAPI**
 
 ---
 
