@@ -6,7 +6,7 @@
 
 ### 📸 Print do site:
 
-![Homepage](./assets/homepage.png)
+![Homepage](./imagem-site.png)
 
 ### 🎞️ Gif da navegação:
 
