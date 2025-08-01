@@ -1,13 +1,13 @@
-## 🖥️ Demo do Projeto
+## 🖥️ Project Demo
 
-### ▶️ Vídeo demonstrando a navegação
+### ▶️ Video walkthrough
 
 [![Assista ao vídeo](./imagem-site.png)](https://youtu.be/WO2YVtTBIhw)
 
-### 📸 Print do site:
+### 📸 Screenshot of the site:
 
 ![Homepage](./imagem-site.png)
 
-### 🎞️ Gif da navegação:
+### 🎞️ Navigation gif:
 
-![Demo](./assets/demo.gif)
+![Demo](./demo.gif)
