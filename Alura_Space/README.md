@@ -2,7 +2,7 @@
 
 ### ▶️ Vídeo demonstrando a navegação
 
-[![Assista ao vídeo](https://img.youtube.com/vi/SEU_ID/0.jpg)](https://youtu.be/WO2YVtTBIhw)
+[![Assista ao vídeo](./imagem-site.png)](https://youtu.be/WO2YVtTBIhw)
 
 ### 📸 Print do site:
 
