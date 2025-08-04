@@ -1,25 +1,6 @@
 {% extends 'galeria/base.html' %}
 {% load static %}
 {% block content %}
-    <div class="pagina-inicial">
-        <header class="cabecalho">
-            <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Logo da Alura Space" />
-            <div class="cabecalho__busca">
-                <div class="busca__fundo">
-                    <input class="busca__input" type="text" placeholder="O que você procura?">
-                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
-                </div>
-            </div>
-        </header>
-        <main class="principal">
-            <section class="menu-lateral">
-                <nav class="menu-lateral__navegacao">
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
-                </nav>
-            </section>
             <section class="conteudo">
                 <section class="banner">
                     <img class="banner__imagem" src="{% static '/assets/imagens/Banner(2).png' %}" alt="banner Alura Space">
@@ -38,101 +19,37 @@
                     <div class="cards">
                         <h2 class="cards__titulo">Navegue pela galeria</h2>
                         <ul class="cards__lista">
+                            {% if cards %}
+                            {% for fotografia in cards %}
                             <li class="card">
-                                <a href="{% url 'imagem' %}">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
+                                <a href="{% url 'imagem' fotografia.id %}">
+                                {% if fotografia.foto == "" or fotografia.foto == null %}
+                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/not-found.png' %}" alt="foto">
+                                {% else %}
+                                    <img class="card__imagem" src="{{ fotografia.foto.url }}" alt="foto">
+                                {% endif %}    
                                 </a>
-                                <span class="card__tag">Estrelas</span>
+                                <span class="card__tag">{{ fotografia.categoria }}</span>
                                 <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
+                                    <p class="card__titulo">{{ fotografia.nome }}</p>
                                     <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
+                                        <p class="card__descricao">{{ fotografia.legenda }}</p>
                                         <span>
                                             <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
                                         </span>
                                     </div>
                                 </div>
                             </li>
-                            <li class="card">
-                                <a href="{% url 'imagem' %}">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="{% url 'imagem' %}">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="{% url 'imagem' %}">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="{% url 'imagem' %}">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="{% url 'imagem' %}">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
+                            {% endfor %}
+                            {% else %}
+                            <div class="imagem__texto">
+                                <p>Fotografias não encontradas!</p>
+                            </div>
+                            {% endif %}
                         </ul>
                     </div>
                 </section>
             </section>
         </main>
     </div>
-    
 {% endblock %}
