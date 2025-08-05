@@ -2,7 +2,7 @@
 
 ### 🎞️ Navigation gif:
 
-![Demo](./assets/demo.gif)
+![Demo](../images/demo.gif)
 
 ### 📸 Screenshot of the site:
 
@@ -10,6 +10,7 @@
 
 ### ▶️ Video walkthrough
 
-[![Watch the video](../images/screenshot.png)](https://youtu.be/I9xBv5zg6gU)]
+[![Watch the video](../images/screenshot.png)](https://youtu.be/I9xBv5zg6gU)
+
 
 
