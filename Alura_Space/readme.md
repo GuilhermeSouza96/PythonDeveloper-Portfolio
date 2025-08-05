@@ -6,9 +6,8 @@
 
 ### 📸 Screenshot of the site:
 
-![Homepage](./assets/homepage.png)
+![Homepage](./images/screenshot.png)
 
 ### ▶️ Video walkthrough
 
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
+[![Watch the video](./images/screenshot.png)](https://youtu.be/I9xBv5zg6gU)
