@@ -10,4 +10,5 @@
 
 ### ▶️ Video walkthrough
 
-[![Watch the video](./images/screenshot.png)](https://youtu.be/I9xBv5zg6gU)
+[![Watch the video](./images/screenshot.png)](https://youtu.be/I9xBv5zg6gU)]
+
