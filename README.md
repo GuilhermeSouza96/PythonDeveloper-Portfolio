@@ -10,7 +10,7 @@ Here are some of the key projects you'll find in this repository:
 - 📋 **[`Stack Files`](./Stack_Files/)**: Is a tool that merges .csv, .txt, and .xlsx files into one. You choose the encoding and separator. No installation needed
 - **Aging Calculation Tool**: Reduced a 4-day manual process to just 10 minutes using Python. This tool calculates the aging of financial entries based on a user-provided date, automating a critical part of the reporting workflow.
 
-### 🌐 Web Applications (In Progress)
+### 🌐 Web Applications
 - 🪐 **[`Alura Space`](./Alura_Space/)**: Astronomy-themed image gallery built with Django. Features include user login, registration, and logout, success and error messages, customized Django admin panel and image search.
 - 🔐 **[`Authentication`](./OAuth_Project/)**: Learned and applied OAuth 2.0 authentication with GitHub, Facebook, and Google. Gained hands-on experience integrating social login into Django applications.
 - 🧾 **[`Study`](./Study/)**: Some interesting subjects studied
