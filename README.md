@@ -12,6 +12,7 @@ Here are some of the key projects you'll find in this repository:
 
 ### 🌐 Web Applications (In Progress)
 - 🪐 **[`Alura Space`](./Alura_Space/)**: Astronomy-themed image gallery built with Django. Features include user login, registration, and logout, success and error messages, customized Django admin panel and image search.
+- 🪐 **[`OAuth2.0 Authentication`](./OAuth_Project/)**: Learned and applied OAuth 2.0 authentication with GitHub, Facebook, and Google. Gained hands-on experience integrating social login into Django applications.
 - 🧾 **[`Study`](./Study/)**: Some interesting subjects studied
 
 ---
