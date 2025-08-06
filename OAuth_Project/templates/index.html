@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <title>Tech</title>
+</head>
+<body>
+
+    <header>
+        <img src="{% static 'assets/logo.jpeg' %}" alt="Uma pessoa feliz no computador" class="logo">
+    </header>
+
+    <main>
+        <h1>Authentication with OAuth</h1>
+        <div class="social-media">
+            <div class="social-media-details">
+                <div class="social-media-item">
+                    <a href="http://localhost:8000/accounts/github/login/?process=login">
+                        <img src="{% static 'assets/github.svg' %}" alt="icone para realizar a autenticação com GitHub" class="social-media-icon">
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="social-media-item">
+                    <a href="http://localhost:8000/accounts/facebook/login/?process=login">
+                        <img src="{% static 'assets/facebook.svg' %}" alt="icone para realizar a autenticação com Facebook" class="social-media-icon">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <div class="social-media-item">
+                    <a href="http://localhost:8000/accounts/google/login/?process=login">
+                        <img src="{% static 'assets/google.svg' %}" alt="icone para realizar a autenticação com Google" class="social-media-icon">
+                        <p>Google</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
