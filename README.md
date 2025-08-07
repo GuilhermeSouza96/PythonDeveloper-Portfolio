@@ -13,6 +13,7 @@ Here are some of the key projects you'll find in this repository:
 ### 🌐 Web Applications
 - 🪐 **[`Alura Space`](./Alura_Space/)**: Astronomy-themed image gallery built with Django. Features include user login, registration, and logout, success and error messages, customized Django admin panel, image search, image upload and editing, filtering by category with buttons, and persistent image storage using AWS S3.
 - 🔐 **[`Authentication`](./OAuth_Project/)**: Learned and applied OAuth 2.0 authentication with GitHub, Facebook, and Google. Gained hands-on experience integrating social login into Django applications.
+- 🏫 **[`School API`](./School_Project/)**: RESTful API for a fictional school system. Includes user authentication, student and course registration, enrollment system, and versioning using Django REST Framework.
 - 🧾 **[`Study`](./Study/)**: Some interesting subjects studied
 
 ---
