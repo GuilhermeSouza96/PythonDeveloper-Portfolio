@@ -15,6 +15,7 @@ Here are some of the key projects you'll find in this repository:
 - 🔐 **[`Authentication`](./OAuth_Project/)**: Learned and applied OAuth 2.0 authentication with GitHub, Facebook, and Google. Gained hands-on experience integrating social login into Django applications.
 - 🏫 **[`School API`](./School_Project/)**: RESTful API for a fictional school system. Includes user authentication, student and course registration, enrollment system, and versioning using Django REST Framework.  
   Developed **unit and integration tests** covering model attributes, business rules, and API endpoints, with fixture loading validation to ensure consistent test data.
+  - 🎮 **[`Game Library`](./Game_Library/)** *(in progress)*: Web application built with Flask for managing a personal game collection. Features will include adding, editing, and deleting games, searching and filtering by genre, and storing data in a relational database. Designed with a responsive interface for easy browsing.
 - 🧾 **[`Study`](./Study/)**: Some interesting subjects studied
 
 ---
