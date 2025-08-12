@@ -1,9 +1,9 @@
 {% extends "template.html" %}
 {% block content %}
-          <form action="{{ url_for('create') }}" method="post" enctype="multipart/form-data">
+          <form action="{{ url_for('update') }}" method="post" enctype="multipart/form-data">
 
               <figure class="img-thumbnail col-md-4">
-                  <img class="img-fluid"src="{{ url_for('image', archive_name='capa_padrao.jpg') }}">
+                  <img class="img-fluid"src="{{ url_for('image', archive_name=game_cover) }}">
                   <figcaption>
                       <label class="fileContainer">
                           Change Cover
@@ -13,17 +13,18 @@
               </figure>
 
             <fieldset>
+                <input type="hidden" name="id" value="{{ game.id }}">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" class="form-control">
+                <input type="text" id="name" name="name" class="form-control" value="{{ game.name }}">
               </div>
               <div class="form-group">
                 <label for="category">Category</label>
-                <input type="text" id="category" name="category" class="form-control">
+                <input type="text" id="category" name="category" class="form-control" value="{{ game.category }}">
               </div>
               <div class="form-group">
                 <label for="console">Console</label>
-                <input type="text" id="console" name="console" class="form-control">
+                <input type="text" id="console" name="console" class="form-control" value="{{ game.console }}">
               </div>
               <button type="submit" class="btn btn-primary btn-salvar">Save</button>
             </fieldset>
