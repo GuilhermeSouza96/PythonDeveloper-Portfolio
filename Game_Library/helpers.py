@@ -1,5 +1,19 @@
 import os
 from game_library import app
+from flask_wtf import FlaskForm
+from wtforms import StringField, validators, SubmitField, PasswordField
+
+
+class GameForm(FlaskForm):
+    name = StringField('Game Name', [validators.DataRequired(), validators.Length(min=1, max=50)])
+    category = StringField('Category', [validators.DataRequired(), validators.Length(min=1, max=40)])
+    console = StringField('Console', [validators.DataRequired(), validators.Length(min=1, max=20)])
+    save = SubmitField('Save Game')
+
+class UserForm(FlaskForm):
+    nickname = StringField('Nickname', [validators.DataRequired(), validators.Length(min=1, max=15)])
+    password = PasswordField('Password', [validators.DataRequired(), validators.Length(min=1, max=100)])
+    login = SubmitField('Login')
 
 def recover_image(id):
     for archive_name in os.listdir(app.config['UPLOAD_PATH']):

@@ -1,9 +1,9 @@
 {% extends "template.html" %}
 {% block content %}
-          <form action="{{ url_for('update') }}" method="post" enctype="multipart/form-data">
+          <form class="formularioJogo" action="{{ url_for('update') }}" method="post" enctype="multipart/form-data">
 
-              <figure class="img-thumbnail col-md-4">
-                  <img class="img-fluid"src="{{ url_for('image', archive_name=game_cover) }}">
+              <figure class="img-thumbnail col-md-4 formularioImagem">
+                  <img class="img-fluid" src="{{ url_for('image', archive_name=game_cover) }}">
                   <figcaption>
                       <label class="fileContainer">
                           Change Cover
@@ -13,20 +13,24 @@
               </figure>
 
             <fieldset>
-                <input type="hidden" name="id" value="{{ game.id }}">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" class="form-control" value="{{ game.name }}">
+                <input type="hidden" name="id" value="{{ id }}">
+                {{ form.csrf_token }}
+              <div class="form-group inputBox">
+                    {{ form.name.label(class = "form-label") }}
+                    {{ form.name(class = "form-control") }}
               </div>
-              <div class="form-group">
-                <label for="category">Category</label>
-                <input type="text" id="category" name="category" class="form-control" value="{{ game.category }}">
+              <div class="form-group inputBox">
+                    {{ form.category.label(class = "form-label") }}
+                    {{ form.category(class = "form-control") }}
               </div>
-              <div class="form-group">
-                <label for="console">Console</label>
-                <input type="text" id="console" name="console" class="form-control" value="{{ game.console }}">
+              <div class="form-group inputBox">
+                    {{ form.console.label(class = "form-label") }}
+                    {{ form.console(class = "form-control") }}
               </div>
-              <button type="submit" class="btn btn-primary btn-salvar">Save</button>
+                <div class="form-group buttons">
+                    {{ form.save(class = "btn btn-primary") }}
+                    <a class="btn btn-danger" href="{{ url_for('index') }}">Home</a>
+                </div>
             </fieldset>
           </form>
 {% endblock %}
